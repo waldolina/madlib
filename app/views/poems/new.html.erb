@@ -1,0 +1,12 @@
+<div class='col-xs-8 col-xs-offset-2'>
+<%= simple_form_for @poem do |f| %>
+  <%= f.input :noun %>
+  <%= f.input :adverb %>
+  <%= f.input :pluralnoun %>
+  <%= f.input :verb %>
+  <%= f.input :adjective %>
+  <%= f.input :plant %>
+  <br />
+  <%= f.submit 'Create' %>
+<% end %>
+</div>
