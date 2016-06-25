@@ -1,10 +1,6 @@
 class PoemsController < ApplicationController
   def index
-    @poem = Poem.first
-  end
-
-  def new
-    @poem = Poem.new
+    @poem = Poem.last
   end
 
   def create
