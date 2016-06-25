@@ -9,6 +9,9 @@ class PoemsController < ApplicationController
 
   def create
     @poem = Poem.create(poem_params)
+    if @poem.invalid?
+      flash[:error] = '<strong>Could not save</strong> the data you entered is invalid.'
+    end
     redirect_to root_path
   end
 end
